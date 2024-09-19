@@ -22,4 +22,6 @@ python2 ./01_script/03_annotate_transcript.py transcriptome.fa 04_annotations_tr
 and 3) Annotate the gff
 This step agregate swissprot info for each transcript at the gene level
 
-python3 ./01/script/03_annotate_gff.py
+python3 ./01/script/04_annotate_gff.py
+
+Then you can run the 05_goatools.sh script to perform gene ontology analysis
