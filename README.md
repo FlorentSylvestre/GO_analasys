@@ -5,8 +5,16 @@ Note that most of this pipeline is adapted from https://github.com/enormandeau/g
 
 #SETUP:
 In 02_sequences:
-two files, the Stickleback_chr.gff (see STAR_alignment pipeline for instruction) and the transcriptome.fa obtain from NCBI
-In 99_swissprot_db a swissprot database
+two files, the Stickleback_chr.gff (see STAR_alignment pipeline for instruction) and the transcriptome.fa obtain from NCBI (`_rna.fna.gz`, must be decompressed and renamed to `transcriptome.fa`) 
+
+Download the latest version of the swissprot database:
+``` 
+wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/swissprot.tar.gz
+tar -zxvf swissprot.tar.gz. 
+```
+
+See the `swissprot.pjs` file to check database version.
+
 
 ##Running pipeline:
 1) Blasting on uniprot
